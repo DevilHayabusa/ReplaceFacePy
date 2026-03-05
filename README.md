@@ -42,4 +42,3 @@ Place your target face image inside the assets/ folder and name it image.jpg.
 Download the inswapper_128.onnx model and place it in your system's InsightFace directory: ~/.insightface/models/inswapper_128.onnx.
 
 
-
