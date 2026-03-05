@@ -30,10 +30,13 @@ PyCamAI is a highly optimized, real-time face-swapping application built with Py
 # On Linux/Mac:
 source venv/bin/activate
 
+
+
 pip install -r requirements.txt
 
 Resource Placement:
 
 Place your target face image inside the assets/ folder and name it image.jpg.
+
 
 Download the inswapper_128.onnx model and place it in your system's InsightFace directory: ~/.insightface/models/inswapper_128.onnx.
