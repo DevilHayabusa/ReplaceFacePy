@@ -5,7 +5,7 @@ import time
 import threading
 from insightface.app import FaceAnalysis
 
-# --- Threaded Camera Class ---
+# Threaded Camera Class 
 class CameraStream:
     def __init__(self, src=0):
         self.stream = cv2.VideoCapture(src)
@@ -27,7 +27,7 @@ class CameraStream:
         self.stopped = True
         self.stream.release()
 
-# --- Main App ---
+#Main App 
 def start_threaded_face_swap():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     target_image_path = os.path.join(base_dir, "..", "assets", "image.jpg")
