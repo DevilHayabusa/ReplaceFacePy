@@ -33,8 +33,13 @@ def start_threaded_face_swap():
     target_image_path = os.path.join(base_dir, "..", "assets", "image.jpg")
     model_path = os.path.expanduser("~/.insightface/models/inswapper_128.onnx")
 
-    if not os.path.exists(target_image_path) or not os.path.exists(model_path):
-        print("ERROR: Missing resources.")
+    
+    if not os.path.exists(target_image_path):
+        print(f"ERROR: Target image is MISSING at -> {target_image_path}")
+        return
+        
+    if not os.path.exists(model_path):
+        print(f"ERROR: AI Model is MISSING at -> {model_path}")
         return
 
     # Initialize Engine
